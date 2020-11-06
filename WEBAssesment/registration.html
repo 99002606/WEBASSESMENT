@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="registration.js">
+var inputtxt=document.getElementById("password");
+    </script>
+</head>
+<body>
+    <form action="success.html" method="get" name="registrationform"></form>
+    <table>
+            
+        <tr>
+           <td align = "right">Enter Name</td>
+           <td><input type = "text" name = "username" id="uname" placeholder="Enter Name" required /></td><br/>
+        </tr>
+        
+        
+    
+    <!-- Enter name <input type="text" name="username" id="uname" placeholder="Enter Name"/><br> -->
+        <tr>
+           <td align = "right">Enter Password</td>
+           
+           <td><input type="password" name="password" id="password" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/></td><br>
+         </tr>
+            <!-- Enter password <input type="password" name="password" id="password" placeholder="Enter Password"/><br> --> -->
+            <tr>
+                <td align = "right">Enter Email</td>
+                
+                <td><input type="text" name="email" id="email" placeholder="Enter Email"/></td><br>
+              </tr>
+           
+              <!-- Enter Email <input type="text" name="email" id="email" placeholder="Enter Email"><br> -->
+       
+              <tr>
+                <td align = "right">Enter city</td>
+                
+                <td><input type="text" name="city" id="city" placeholder="Enter city"/></td><br>
+              </tr>
+              <!-- Enter city <input type="text" name="city" id="city" placeholder="Enter city"/><br> -->
+              <tr>
+                <td align = "right">Enter Mobile Number</td>
+                
+                <td><input type="text" name="phno" id="phno" placeholder="Enter Password"/></td><br>
+              </tr>
+        <!-- Enter Phone Number <input type="text" name="phno" id="phno" placeholder="Enter Mobile Num"/><br> -->
+        
+        <tr>
+       <td>
+        <input type="button" Value="Click Here" onclick="validation()">
+
+       </td>
+
+        </tr>
+        
+</body>
+</html>

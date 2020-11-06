@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var TV=new Array('Onida','LG','WhirlPool','Sony');
+        var Mobile = new Array('iphone','samsung','Sony','Oppo','realme','Mi');
+        var Laptop = new Array('Lenova','Sony','HP','Acer','Asus','Dell');
+        function validation(){
+            var itemlist=document.getElementById("items").value;
+            
+            if(itemlist=="mobile"){
+                for(let i=0;i<Mobile.length;i++)
+                document.getElementById("display").innerHTML+=Mobile[i];
+        
+            }
+            if(itemlist=="tv"){
+                for(let i=0;i<TV.length;i++)
+                document.getElementById("display").innerHTML+=TV[i];
+                
+            }
+            if(itemlist=="laptop"){
+                for(let i=0;i<Laptop.length;i++)
+                document.getElementById("display").innerHTML+=Laptop[i];
+            }
+        }
+    </script>
+</head>
+<body>
+    <select id="items" onchange="validation()">
+        <option value="mobile">Mobile</option>
+        <option value="tv">TV</option>
+        <option value="laptop">Laptop</option>
+    </select>
+    <div id="display">
+
+    </div>
+</body>
+</html>
